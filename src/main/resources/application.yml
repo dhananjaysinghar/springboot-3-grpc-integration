@@ -1,0 +1,14 @@
+
+#logging:
+#  level:
+#    root: DEBUG
+
+grpc:
+  server:
+    port: 8000
+    security:
+      enabled: false
+  client:
+    grpc-client-service:
+      address: static://localhost:8000
+      negotiationType: PLAINTEXT
